@@ -17,7 +17,7 @@ class Cell
 
   def living?
 # change to create variable 'future_alive' that
-# dictates state for next gen
+# dictates state for next gen based on rules
     true if @alive
   end
 
