@@ -39,7 +39,7 @@ class CellTest < Minitest::Test
 
   def test_can_change_state_to_dead
     cell = Cell.new(true)
-    cell.dead!
+    cell.die!
 
     refute cell.alive
   end
