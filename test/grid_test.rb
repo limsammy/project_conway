@@ -28,4 +28,11 @@ class GridTest < Minitest::Test
 
     assert_equal 10, grid.length
   end
+
+  def test_place_cell_at_location
+    grid = Grid.new
+    grid.place_cell(0,1)
+
+    assert grid.check_cell_state(0,1)
+  end
 end
