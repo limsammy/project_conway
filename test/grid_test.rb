@@ -16,4 +16,16 @@ class GridTest < Minitest::Test
 
     assert_equal [], grid.cells
   end
+
+  def test_width_instance_variable_is_default_10
+    grid = Grid.new
+
+    assert_equal 10, grid.width
+  end
+
+  def test_length_instance_variable_is_default_10
+    grid = Grid.new
+
+    assert_equal 10, grid.length
+  end
 end
