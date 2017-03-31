@@ -18,6 +18,18 @@ class Cell
   def living?
     true if @alive
   end
+
+  def die!
+    if @alive
+      @alive = false
+    else
+      puts "cell already dead."
+    end
+  end
+
+  def dead?
+    true if !@alive
+  end
 end
 
 
