@@ -1,6 +1,7 @@
 require 'pry'
 
 class Cell
+  attr_reader :alive
 
   def initialize
     @alive = false
