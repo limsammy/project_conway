@@ -1,10 +1,10 @@
 require 'pry'
 
 class Cell
-  attr_reader :alive
+  attr_accessor :alive
 
-  def initialize
-    @alive = false
+  def initialize(alive = false)
+    @alive = alive
   end
 
   def alive!

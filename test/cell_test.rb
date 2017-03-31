@@ -30,4 +30,10 @@ class CellTest < Minitest::Test
 
     assert cell.alive?
   end
+
+  def test_can_initialize_object_with_state_alive
+    cell = Cell.new(true)
+
+    assert cell.alive?
+  end
 end
