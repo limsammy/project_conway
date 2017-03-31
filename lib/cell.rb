@@ -7,7 +7,7 @@ class Cell
     @alive = alive
   end
 
-  def alive!
+  def live!
     if @alive
       puts "cell already living."
     else
@@ -15,7 +15,7 @@ class Cell
     end
   end
 
-  def alive?
+  def living?
     true if @alive
   end
 end
