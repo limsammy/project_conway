@@ -34,6 +34,7 @@ end
 
 
 # Rules
-# If cell is alive then it continues to stay alive if it has
-# 2 or 3 alive neighbors.  If the cell is dead then it comes
-# back to life only if it has exactly 3 alive neighbors.
+# Live cell survives generation if it has 2 or 3 alive neighbors.
+# If cell has <2 live neighbors it dies (underpopulation)
+# If the cell is dead then it comes to life if it has 3 live neighbors
+# Live cell will die if >3 neighbors (overpopulation)
