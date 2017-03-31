@@ -35,4 +35,9 @@ class GridTest < Minitest::Test
 
     assert grid.check_cell_state(0,1)
   end
+
+  def test_render_grid_creates_a_grid_filled_with_nil
+    grid = Grid.new
+    grid.render_grid
+  end
 end
