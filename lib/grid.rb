@@ -14,8 +14,15 @@ class Grid
 # are alive or dead
   end
 
-  def fill_grid
+  def place_cell(x_location, y_location)
 # takes input of grid location to put an alive cell
+  end
+
+  def fill_grid
 # fills rest of grid with dead cells
+  end
+
+  def check_cell_state(x_location, y_location)
+# returns true if alive, false if dead
   end
 end
