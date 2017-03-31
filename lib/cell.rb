@@ -6,6 +6,18 @@ class Cell
   def initialize
     @alive = false
   end
+
+  def alive!
+    if @alive
+      puts "cell already living."
+    else
+      @alive = true
+    end
+  end
+
+  def alive?
+    true if @alive
+  end
 end
 
 
