@@ -16,4 +16,18 @@ class CellTest < Minitest::Test
 
     refute cell.alive
   end
+
+  def test_can_change_state_to_alive
+    cell = Cell.new
+    cell.alive!
+
+    assert cell.alive
+  end
+
+  def test_is_instance_alive
+    cell = Cell.new
+    cell.alive!
+
+    assert cell.alive?
+  end
 end
